@@ -4,9 +4,14 @@
 https://github.com/AILab-CVC/YOLO-World
 ```
 
-## Getting started
+## 开始
 
-### 1. Installation
+### 1. 下载源码
+```bash
+git clone --recursive https://github.com/AILab-CVC/YOLO-World.git
+```
+
+#### 创建虚拟环境
 
 YOLO-World is developed based on `torch==1.11.0` `mmyolo==0.6.0` and `mmdetection==3.0.0`. Check more details about `requirements` and `mmcv` in [docs/installation](./docs/installation.md).
 

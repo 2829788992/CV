@@ -6,25 +6,31 @@ https://github.com/AILab-CVC/YOLO-World
 
 ## 开始
 
-### 1. 下载源码
+### 1. 克隆项目
 ```bash
-git clone --recursive https://github.com/AILab-CVC/YOLO-World.git
+git clone --recursive https://github.com/2829788992/CV.git
 ```
 
-#### 创建虚拟环境
-
-YOLO-World is developed based on `torch==1.11.0` `mmyolo==0.6.0` and `mmdetection==3.0.0`. Check more details about `requirements` and `mmcv` in [docs/installation](./docs/installation.md).
-
-#### Clone Project 
+### 2. 用anaconda建一个虚拟环境
 
 ```bash
-git clone --recursive https://github.com/AILab-CVC/YOLO-World.git
+conda create --n yolow python=3.8 -y
+conda activate yolow
 ```
-#### Install
+
+### 3. 安装pytorch 
 
 ```bash
-pip install torch wheel -q
-pip install -e .
+conda install pytorch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 cudatoolkit=11.3
+```
+### 4. 安装mmengine等OpenMMLab中的库，为了方便安装，可以从pip转为mim进行安装
+
+```bash
+pip install -U openmim
+mim install mmcv==2.0.1
+mim install mmdet==3.3.0
+mim install mmengine==0.10.3
+mim install mmyolo==0.6.0
 ```
 
 ### 2. Preparing Data

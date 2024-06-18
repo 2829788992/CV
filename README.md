@@ -33,10 +33,19 @@ mim install mmengine==0.10.3
 mim install mmyolo==0.6.0
 ```
 
-### 2. Preparing Data
+### 5. 在项目目录/third_party下，mmyolo是空的，进去clone mmyolo并且安装
 
-We provide the details about the pre-training data in [docs/data](./docs/data.md).
+```bash
+git clone https://github.com/open-mmlab/mmyolo.git
+pip install -r requirements/albu.txt
+mim install -v -e .
+```
+### 6. 回到项目目录，安装supervision和transformers
 
+```bash
+pip install supervision
+pip install transformers
+```
 
 ## Training & Evaluation
 
